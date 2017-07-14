@@ -26,8 +26,8 @@ function main() {
 		jQuery.event.trigger({ type: 'keydown', which: keyCode, target: $('body') });
 	};
 
-	var keyMap   = { 113: 53, 119: 54, 101: 55, 114: 56 };
-	var indexMap = { '5': 'q', '6': 'w', '7': 'e', '8': 'r' };
+	var keyMap   = { 65: 49, 83: 50, 68: 51, 70: 52, 113: 53, 119: 54, 101: 55, 114: 56 };
+	var indexMap = { ‘1’: ‘a’, ‘2’: ’s’, ‘3’: ‘d’, ‘4’: ‘f’, ‘5’: 'q', '6': 'w', '7': 'e', '8': 'r' };
 
 	$(document).on('keypress', function(e) {
 		if ($(e.target).is('input')) {
