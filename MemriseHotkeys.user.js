@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name           Memrise Hotkeys
+// @name           Memrise Hotkeys asdfqwer
 // @description    Improves the hotkeys for multiple choice questions on Memrise
 // @match          https://www.memrise.com/course/*/garden/*
 // @match          https://www.memrise.com/garden/review/*
-// @version        0.1.2
-// @updateURL      https://userscripts.org/scripts/source/166711.meta.js
-// @downloadURL    https://userscripts.org/scripts/source/166711.user.js
+// @version        0.1.3
+// @updateURL      https://github.com/kpatelPro/memrise-hotkeys/blob/master/MemriseHotkeys.user.js
+// @downloadURL    https://github.com/kpatelPro/memrise-hotkeys/blob/master/MemriseHotkeys.user.js
 // ==/UserScript==
 
 function addjQuery(callback) {
