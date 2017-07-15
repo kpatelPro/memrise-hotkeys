@@ -24,7 +24,7 @@ function main() {
 
 	var sendKey = function(keyCode) {
         alert("sending: " + keyCode);
-		jQuery.event.trigger({ type: 'keydown’, which: keyCode, target: $('body') });
+		jQuery.event.trigger({ type: 'keydown', which: keyCode, target: $('body') });
 		jQuery.event.trigger({ type: 'keypress', which: keyCode, target: $('body') });
 	};
 
