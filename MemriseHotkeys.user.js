@@ -28,6 +28,7 @@ function main() {
 		jQuery.event.trigger({ type: 'keypress', which: keyCode, target: $('body') });
 	};
 
+	var keyArray   = [ 97, 115, 100, 102, 113, 119, 101 ]; 
 	var keyMap   = { 97: 49, 115: 50, 100: 51, 102: 52, 113: 53, 119: 54, 101: 55, 114: 56 };
 	var indexMap = { '1': 'a', '2': 's', '3': 'd', '4': 'f', '5': 'q', '6': 'w', '7': 'e', '8': 'r' };
 
@@ -35,9 +36,17 @@ function main() {
 		if ($(e.target).is('input')) {
 			return;
 		}
-		if (e.which in keyMap) {
-			sendKey(keyMap[e.which]);
+		var keyIndex = keyArray.indexOf(e.which);
+		if (keyIndex >= 0) {
+			var button = $('.choice')[keyIndex];
+			if (button) {
+ 				button.click();
+			}
 		}
+	        $(".next-button").click();
+		//if (e.which in keyMap) {
+		//	sendKey(keyMap[e.which]);
+		//}
 	});
 
 	var replaceIndexes = function(obj) {
