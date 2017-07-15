@@ -3,9 +3,9 @@
 // @description    Improves the hotkeys for multiple choice questions on Memrise
 // @match          https://www.memrise.com/course/*/garden/*
 // @match          https://www.memrise.com/garden/review/*
-// @version        0.1.3
-// @updateURL      https://github.com/kpatelPro/memrise-hotkeys/blob/master/MemriseHotkeys.user.js
-// @downloadURL    https://github.com/kpatelPro/memrise-hotkeys/blob/master/MemriseHotkeys.user.js
+// @version        0.1.4
+// @updateURL      https://github.com/kpatelPro/memrise-hotkeys/raw/master/MemriseHotkeys.user.js
+// @downloadURL    https://github.com/kpatelPro/memrise-hotkeys/raw/master/MemriseHotkeys.user.js
 // ==/UserScript==
 
 function addjQuery(callback) {
